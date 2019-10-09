@@ -1,6 +1,6 @@
 FROM php:7.0-cli
 
-COPY ./app /app/
+RUN git clone git@github.com:escsrl/lightwebsocket.git ./app
 CMD php /app/websocket
 
 EXPOSE 8087
